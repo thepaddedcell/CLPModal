@@ -12,7 +12,8 @@ typedef enum {
     CLPModalDirectionLeft,
     CLPModalDirectionRight,
     CLPModalDirectionBottom,
-    CLPModalDirectionTop
+    CLPModalDirectionTop,
+    CLPModalDirectionDefault = CLPModalDirectionTop
 } CLPModalDirection;
 
 @interface CLPModalView : UIViewController

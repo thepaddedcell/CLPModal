@@ -125,7 +125,7 @@
 
 - (void)hide
 {
-    [self hideInDirection:CLPModalDirectionTop];
+    [self hideInDirection:CLPModalDirectionDefault];
 }
 
 - (void)hideInDirection:(CLPModalDirection)direction
