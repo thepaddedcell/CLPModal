@@ -99,7 +99,7 @@
     
     cell.textLabel.text = self.items[indexPath.row];
     cell.textLabel.font = [UIFont systemFontOfSize:18.f];
-    cell.textLabel.textColor = [UIColor grayColor];
+    cell.textLabel.textColor = [UIColor blackColor];
     cell.textLabel.backgroundColor = [UIColor whiteColor];
     cell.backgroundView = [[UIView alloc] initWithFrame:cell.bounds];
     cell.backgroundView.backgroundColor = [UIColor whiteColor];
