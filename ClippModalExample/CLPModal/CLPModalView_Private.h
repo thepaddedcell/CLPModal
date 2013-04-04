@@ -7,6 +7,9 @@
 //
 
 #import "CLPModalView.h"
+#define kCLPYellowColour [UIColor colorWithRed:250.f/255.f green:187.f/255.f blue:67.f/255.f alpha:1.f]
+#define kCLPBlueColour [UIColor colorWithRed:38.f/255.f green:136.f/255.f blue:181.f/255.f alpha:1.f]
+#define kCLPDarkBlueColour [UIColor colorWithRed:20.f/255.f green:117.f/255.f blue:161.f/255.f alpha:1.f]
 
 #define kGutterSize 20
 

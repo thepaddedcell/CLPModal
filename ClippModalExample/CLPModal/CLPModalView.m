@@ -10,6 +10,8 @@
 #import "CLPModalView_Private.h"
 #import <QuartzCore/QuartzCore.h>
 
+#define kCLPModalBackgroundColour [UIColor colorWithRed:243.f/255.f green:243.f/255.f blue:243.f/255.f alpha:1.f]
+
 @interface CLPModalView ()
 
 @property (nonatomic) BOOL onScreen;
@@ -50,7 +52,7 @@
     [self.view addSubview:self.animationView];
     
     self.contentView = [[UIView alloc] initWithFrame:self.animationView.bounds];
-    self.contentView.backgroundColor = [UIColor lightGrayColor];
+    self.contentView.backgroundColor = kCLPModalBackgroundColour;
     self.contentView.layer.cornerRadius = 5.f;
     self.contentView.layer.masksToBounds = YES;
     self.contentView.clipsToBounds = YES;

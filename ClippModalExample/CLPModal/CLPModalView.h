@@ -16,6 +16,8 @@ typedef enum {
     CLPModalDirectionDefault = CLPModalDirectionTop
 } CLPModalDirection;
 
+#define kCLPGreyColour [UIColor colorWithRed:63.f/255.f green:63.f/255.f blue:63.f/255.f alpha:1.f]
+
 @interface CLPModalView : UIViewController
 
 @property (nonatomic, strong) UIView* animationView;

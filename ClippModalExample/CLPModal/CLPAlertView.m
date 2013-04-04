@@ -56,10 +56,10 @@
     self.messageLabel.numberOfLines = 0;
     self.messageLabel.text = self.message;
     self.messageLabel.font = kMessageFont;
-    self.messageLabel.lineBreakMode = UILineBreakModeWordWrap;
+    self.messageLabel.lineBreakMode = NSLineBreakByWordWrapping;
     self.messageLabel.textAlignment = NSTextAlignmentCenter;
     self.messageLabel.backgroundColor = [UIColor clearColor];
-    self.messageLabel.textColor = [UIColor grayColor];
+    self.messageLabel.textColor = kCLPGreyColour;
     [self.contentView addSubview:self.messageLabel];
     
     CGFloat height = self.view.frame.size.height;
@@ -68,7 +68,7 @@
     frame.origin.y = height / 2 - frame.size.height / 2;
     self.contentView.frame = frame;
     
-    self.contentView.layer.borderColor = [[UIColor yellowColor] CGColor];
+    self.contentView.layer.borderColor = [kCLPYellowColour CGColor];
     self.contentView.layer.borderWidth = 1.f;
     self.contentView.backgroundColor = [UIColor whiteColor];
 }
@@ -82,9 +82,8 @@
     
     self.cancelButton = [[UIButton alloc] initWithFrame:CGRectMake(kGutter, [self messageHeight] + self.navigationBar.frame.size.height + kGutter * 3, self.contentView.frame.size.width - kGutter * 2, 44)];
     [self.cancelButton setTitle:title forState:UIControlStateNormal];
-    [self.cancelButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [self.cancelButton setTitleColor:[UIColor orangeColor
-                                      ] forState:UIControlStateHighlighted];
+    [self.cancelButton setTitleColor:kCLPBlueColour forState:UIControlStateNormal];
+    [self.cancelButton setTitleColor:kCLPDarkBlueColour forState:UIControlStateHighlighted];
     self.cancelButton.titleLabel.font = kButtonFont;
     self.cancelButton.backgroundColor = [UIColor clearColor];
     [self.cancelButton addTarget:self action:@selector(cancelPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -108,13 +107,12 @@
 
     self.confirmButton = [[UIButton alloc] initWithFrame:CGRectMake(kGutter, [self messageHeight] + self.navigationBar.frame.size.height + kGutter * 3, self.contentView.frame.size.width - kGutter * 2, 44)];
     [self.confirmButton setTitle:title forState:UIControlStateNormal];
-    [self.confirmButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-    [self.confirmButton setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+    [self.confirmButton setTitleColor:kCLPBlueColour forState:UIControlStateNormal];
+    [self.confirmButton setTitleColor:kCLPDarkBlueColour forState:UIControlStateHighlighted];
     self.confirmButton.titleLabel.font = kButtonFont;
     self.confirmButton.backgroundColor = [UIColor clearColor];
     [self.confirmButton addTarget:self action:@selector(confirmPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:self.confirmButton];
-
 }
 
 - (void)confirmPressed:(id)sender

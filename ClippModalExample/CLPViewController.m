@@ -21,6 +21,12 @@
 
 - (void)alertViewPressed:(id)sender
 {
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                    UITextAttributeFont : [UIFont systemFontOfSize:18.f],
+                               UITextAttributeTextColor : kCLPGreyColour,
+                         UITextAttributeTextShadowColor : [UIColor clearColor] }
+     ];
     //If you're using a CLPAlertView, I'd recommend Appearance Proxying the UINavigationBar class
     CLPAlertView* alert = [CLPAlertView alertWithTitle:@"Alert!" message:@"This is an alert view"];
     [alert setConfirmButtonWithTitle:@"Confirm" block:^{
@@ -34,7 +40,7 @@
 
 - (void)pickerViewPressed:(id)sender
 {
-    CLPPickerView* picker = [[CLPPickerView alloc] initWithTitle:@"Picker View" items:@[@"One", @"Two", @"Three", @"Four"] selectedIndex:-1 scrollIndex:0 completion:^(NSString *value, NSInteger index) {
+    CLPPickerView* picker = [[CLPPickerView alloc] initWithTitle:@"Picker View" items:@[@"One", @"Two", @"Three", @"Four"] selectedIndex:1 scrollIndex:0 completion:^(NSString *value, NSInteger index) {
        //This is what happens when an item is picked
     }];
     [picker show];

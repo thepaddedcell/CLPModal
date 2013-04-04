@@ -43,7 +43,7 @@
         self.tableView.layer.cornerRadius = 5.f;
         self.tableView.layer.masksToBounds = YES;
         self.tableView.clipsToBounds = YES;
-        self.tableView.backgroundColor = [UIColor orangeColor];
+        self.tableView.backgroundColor = kCLPBlueColour;
         self.animationView = self.tableView;
         [self.view addSubview:self.animationView];
     }
@@ -80,11 +80,11 @@
     label.text = self.title;
     label.font = [UIFont systemFontOfSize:18.f];
     label.textAlignment = NSTextAlignmentCenter;
-    label.textColor = [UIColor blueColor];
+    label.textColor = kCLPGreyColour;
     label.backgroundColor = [UIColor whiteColor];
     [view addSubview:label];
     UIView* keyLine = [[UIView alloc] initWithFrame:CGRectMake(0, view.bounds.size.height - 1, view.bounds.size.width, 1)];
-    keyLine.backgroundColor = [UIColor yellowColor];
+    keyLine.backgroundColor = kCLPYellowColour;
     [view addSubview:keyLine];
     return view;
 }
@@ -99,12 +99,12 @@
     
     cell.textLabel.text = self.items[indexPath.row];
     cell.textLabel.font = [UIFont systemFontOfSize:18.f];
-    cell.textLabel.textColor = [UIColor blackColor];
+    cell.textLabel.textColor = kCLPGreyColour;
     cell.textLabel.backgroundColor = [UIColor whiteColor];
     cell.backgroundView = [[UIView alloc] initWithFrame:cell.bounds];
     cell.backgroundView.backgroundColor = [UIColor whiteColor];
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.bounds];
-    cell.selectedBackgroundView.backgroundColor = [UIColor blueColor];
+    cell.selectedBackgroundView.backgroundColor = kCLPBlueColour;
     return cell;
 }
 
