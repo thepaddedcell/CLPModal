@@ -3,8 +3,6 @@ CLPModal
 
 ```CLPModal``` is a custom modal view base class with 2 example implementations - a custom alert view & a picker view. It supports being shown and dismissed from any lateral direction - Top, Bottom, Left or Right.
 
-![Alert View](alertview.png) ![Picker View](pickerview.png)
-
 ## Installation
 Clone the repository (or add it as a submodule) and then add the files to your project.  
 At a minimum, you need to add ```CLPModalView.h```, ```CLPModalView.m``` and ```CLPModal_Private.h```.
@@ -32,6 +30,36 @@ or
 	[[[YourCustomModal alloc] init] show];
 
 Obviously, you'll probably end up with more complex initialisers (see ```CLPAlertView``` or ```CLPPickerView``` for examples).
+
+### CLPAlertView
+```CLPAlertView``` is a custom alert view that is block based, because who doesn't love blocks?!
+
+![](alertview.png)
+
+Usage is as follows:
+  
+	CLPAlertView* alert = [CLPAlertView alertWithTitle:@"Alert!" message:@"This is an alert view"];   
+	[alert setConfirmButtonWithTitle:@"Confirm" block:^{   
+		//Do things
+	}];   
+	[alert setCancelButtonWithTitle:@"Cancel" block:^{   
+		//Don't do things
+	}];   
+	[alert show];  
+
+Tapping either the confirm or cancel buttons will dismiss the modal view automagically. 
+
+### CLPPickerView
+```CLPPickerView``` is a modal tableview that when a cell is tapped, will fire it's completion block & return the selected index as well as the title string. It can have a preselected value and be told to scroll to a given row.
+ 
+![](pickerview.png "Picker View")
+
+Usage is as follows:
+
+	CLPPickerView* picker = [[CLPPickerView alloc] initWithTitle:@"Picker View" items:@[@"One", @"Two", @"Three", @"Four"] selectedIndex:1 scrollIndex:0 completion:^(NSString *value, NSInteger index) {
+		//Do things
+	}];
+	[picker show];
 
 ## Questions & Contribution
 Direct any questions you have to me via Issues or on Twitter [at] thepaddedcell & if you'd like to contribute then send me a pull request and I'll take a look.
