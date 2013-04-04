@@ -31,8 +31,11 @@ or
 
 Obviously, you'll probably end up with more complex initialisers (see ```CLPAlertView``` or ```CLPPickerView``` for examples).
 
-## Questions
-Direct any questions you have to me via Issues or on Twitter [at] thepaddedcell.
-  
-## Happy coding!
+## Questions & Contribution
+Direct any questions you have to me via Issues or on Twitter [at] thepaddedcell & if you'd like to contribute then send me a pull request and I'll take a look.
+
+
+Cheers!
+
+## [LICENSE](LICENSE)
 
