@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E60FAA60170D1D7C008C4A71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60FAA5F170D1D7C008C4A71 /* UIKit.framework */; };
+		E60FAA62170D1D7C008C4A71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60FAA61170D1D7C008C4A71 /* Foundation.framework */; };
+		E60FAA64170D1D7C008C4A71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60FAA63170D1D7C008C4A71 /* CoreGraphics.framework */; };
+		E60FAA6A170D1D7C008C4A71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E60FAA68170D1D7C008C4A71 /* InfoPlist.strings */; };
+		E60FAA6C170D1D7C008C4A71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E60FAA6B170D1D7C008C4A71 /* main.m */; };
+		E60FAA70170D1D7C008C4A71 /* CLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E60FAA6F170D1D7C008C4A71 /* CLPAppDelegate.m */; };
+		E60FAA72170D1D7C008C4A71 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E60FAA71170D1D7C008C4A71 /* Default.png */; };
+		E60FAA74170D1D7C008C4A71 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E60FAA73170D1D7C008C4A71 /* Default@2x.png */; };
+		E60FAA76170D1D7C008C4A71 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E60FAA75170D1D7C008C4A71 /* Default-568h@2x.png */; };
+		E60FAA79170D1D7C008C4A71 /* CLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60FAA78170D1D7C008C4A71 /* CLPViewController.m */; };
+		E60FAA7C170D1D7C008C4A71 /* CLPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60FAA7A170D1D7C008C4A71 /* CLPViewController.xib */; };
+		E60FAA8A170D1DF8008C4A71 /* CLPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E60FAA84170D1DF8008C4A71 /* CLPAlertView.m */; };
+		E60FAA8B170D1DF8008C4A71 /* CLPModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = E60FAA87170D1DF8008C4A71 /* CLPModalView.m */; };
+		E60FAA8C170D1DF8008C4A71 /* CLPPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E60FAA89170D1DF8008C4A71 /* CLPPickerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E60FAA5C170D1D7C008C4A71 /* ClippModalExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClippModalExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60FAA5F170D1D7C008C4A71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E60FAA61170D1D7C008C4A71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E60FAA63170D1D7C008C4A71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E60FAA67170D1D7C008C4A71 /* ClippModalExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClippModalExample-Info.plist"; sourceTree = "<group>"; };
+		E60FAA69170D1D7C008C4A71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E60FAA6B170D1D7C008C4A71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E60FAA6D170D1D7C008C4A71 /* ClippModalExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClippModalExample-Prefix.pch"; sourceTree = "<group>"; };
+		E60FAA6E170D1D7C008C4A71 /* CLPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLPAppDelegate.h; sourceTree = "<group>"; };
+		E60FAA6F170D1D7C008C4A71 /* CLPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPAppDelegate.m; sourceTree = "<group>"; };
+		E60FAA71170D1D7C008C4A71 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E60FAA73170D1D7C008C4A71 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E60FAA75170D1D7C008C4A71 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E60FAA77170D1D7C008C4A71 /* CLPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLPViewController.h; sourceTree = "<group>"; };
+		E60FAA78170D1D7C008C4A71 /* CLPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPViewController.m; sourceTree = "<group>"; };
+		E60FAA7B170D1D7C008C4A71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CLPViewController.xib; sourceTree = "<group>"; };
+		E60FAA83170D1DF8008C4A71 /* CLPAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLPAlertView.h; path = CLPModal/CLPAlertView.h; sourceTree = "<group>"; };
+		E60FAA84170D1DF8008C4A71 /* CLPAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLPAlertView.m; path = CLPModal/CLPAlertView.m; sourceTree = "<group>"; };
+		E60FAA85170D1DF8008C4A71 /* CLPModalView_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLPModalView_Private.h; path = CLPModal/CLPModalView_Private.h; sourceTree = "<group>"; };
+		E60FAA86170D1DF8008C4A71 /* CLPModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLPModalView.h; path = CLPModal/CLPModalView.h; sourceTree = "<group>"; };
+		E60FAA87170D1DF8008C4A71 /* CLPModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLPModalView.m; path = CLPModal/CLPModalView.m; sourceTree = "<group>"; };
+		E60FAA88170D1DF8008C4A71 /* CLPPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLPPickerView.h; path = CLPModal/CLPPickerView.h; sourceTree = "<group>"; };
+		E60FAA89170D1DF8008C4A71 /* CLPPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLPPickerView.m; path = CLPModal/CLPPickerView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E60FAA59170D1D7C008C4A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60FAA60170D1D7C008C4A71 /* UIKit.framework in Frameworks */,
+				E60FAA62170D1D7C008C4A71 /* Foundation.framework in Frameworks */,
+				E60FAA64170D1D7C008C4A71 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E60FAA53170D1D7C008C4A71 = {
+			isa = PBXGroup;
+			children = (
+				E60FAA65170D1D7C008C4A71 /* ClippModalExample */,
+				E60FAA5E170D1D7C008C4A71 /* Frameworks */,
+				E60FAA5D170D1D7C008C4A71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E60FAA5D170D1D7C008C4A71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E60FAA5C170D1D7C008C4A71 /* ClippModalExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E60FAA5E170D1D7C008C4A71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E60FAA5F170D1D7C008C4A71 /* UIKit.framework */,
+				E60FAA61170D1D7C008C4A71 /* Foundation.framework */,
+				E60FAA63170D1D7C008C4A71 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E60FAA65170D1D7C008C4A71 /* ClippModalExample */ = {
+			isa = PBXGroup;
+			children = (
+				E60FAA82170D1D84008C4A71 /* CLPModal */,
+				E60FAA6E170D1D7C008C4A71 /* CLPAppDelegate.h */,
+				E60FAA6F170D1D7C008C4A71 /* CLPAppDelegate.m */,
+				E60FAA77170D1D7C008C4A71 /* CLPViewController.h */,
+				E60FAA78170D1D7C008C4A71 /* CLPViewController.m */,
+				E60FAA7A170D1D7C008C4A71 /* CLPViewController.xib */,
+				E60FAA66170D1D7C008C4A71 /* Supporting Files */,
+			);
+			path = ClippModalExample;
+			sourceTree = "<group>";
+		};
+		E60FAA66170D1D7C008C4A71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E60FAA67170D1D7C008C4A71 /* ClippModalExample-Info.plist */,
+				E60FAA68170D1D7C008C4A71 /* InfoPlist.strings */,
+				E60FAA6B170D1D7C008C4A71 /* main.m */,
+				E60FAA6D170D1D7C008C4A71 /* ClippModalExample-Prefix.pch */,
+				E60FAA71170D1D7C008C4A71 /* Default.png */,
+				E60FAA73170D1D7C008C4A71 /* Default@2x.png */,
+				E60FAA75170D1D7C008C4A71 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E60FAA82170D1D84008C4A71 /* CLPModal */ = {
+			isa = PBXGroup;
+			children = (
+				E60FAA83170D1DF8008C4A71 /* CLPAlertView.h */,
+				E60FAA84170D1DF8008C4A71 /* CLPAlertView.m */,
+				E60FAA85170D1DF8008C4A71 /* CLPModalView_Private.h */,
+				E60FAA86170D1DF8008C4A71 /* CLPModalView.h */,
+				E60FAA87170D1DF8008C4A71 /* CLPModalView.m */,
+				E60FAA88170D1DF8008C4A71 /* CLPPickerView.h */,
+				E60FAA89170D1DF8008C4A71 /* CLPPickerView.m */,
+			);
+			name = CLPModal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E60FAA5B170D1D7C008C4A71 /* ClippModalExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60FAA7F170D1D7C008C4A71 /* Build configuration list for PBXNativeTarget "ClippModalExample" */;
+			buildPhases = (
+				E60FAA58170D1D7C008C4A71 /* Sources */,
+				E60FAA59170D1D7C008C4A71 /* Frameworks */,
+				E60FAA5A170D1D7C008C4A71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClippModalExample;
+			productName = ClippModalExample;
+			productReference = E60FAA5C170D1D7C008C4A71 /* ClippModalExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E60FAA54170D1D7C008C4A71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CLP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Craig Stanford";
+			};
+			buildConfigurationList = E60FAA57170D1D7C008C4A71 /* Build configuration list for PBXProject "ClippModalExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E60FAA53170D1D7C008C4A71;
+			productRefGroup = E60FAA5D170D1D7C008C4A71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E60FAA5B170D1D7C008C4A71 /* ClippModalExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E60FAA5A170D1D7C008C4A71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60FAA6A170D1D7C008C4A71 /* InfoPlist.strings in Resources */,
+				E60FAA72170D1D7C008C4A71 /* Default.png in Resources */,
+				E60FAA74170D1D7C008C4A71 /* Default@2x.png in Resources */,
+				E60FAA76170D1D7C008C4A71 /* Default-568h@2x.png in Resources */,
+				E60FAA7C170D1D7C008C4A71 /* CLPViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E60FAA58170D1D7C008C4A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60FAA6C170D1D7C008C4A71 /* main.m in Sources */,
+				E60FAA70170D1D7C008C4A71 /* CLPAppDelegate.m in Sources */,
+				E60FAA79170D1D7C008C4A71 /* CLPViewController.m in Sources */,
+				E60FAA8A170D1DF8008C4A71 /* CLPAlertView.m in Sources */,
+				E60FAA8B170D1DF8008C4A71 /* CLPModalView.m in Sources */,
+				E60FAA8C170D1DF8008C4A71 /* CLPPickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E60FAA68170D1D7C008C4A71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E60FAA69170D1D7C008C4A71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E60FAA7A170D1D7C008C4A71 /* CLPViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E60FAA7B170D1D7C008C4A71 /* en */,
+			);
+			name = CLPViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E60FAA7D170D1D7C008C4A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E60FAA7E170D1D7C008C4A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E60FAA80170D1D7C008C4A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClippModalExample/ClippModalExample-Prefix.pch";
+				INFOPLIST_FILE = "ClippModalExample/ClippModalExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E60FAA81170D1D7C008C4A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClippModalExample/ClippModalExample-Prefix.pch";
+				INFOPLIST_FILE = "ClippModalExample/ClippModalExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E60FAA57170D1D7C008C4A71 /* Build configuration list for PBXProject "ClippModalExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60FAA7D170D1D7C008C4A71 /* Debug */,
+				E60FAA7E170D1D7C008C4A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E60FAA7F170D1D7C008C4A71 /* Build configuration list for PBXNativeTarget "ClippModalExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60FAA80170D1D7C008C4A71 /* Debug */,
+				E60FAA81170D1D7C008C4A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E60FAA54170D1D7C008C4A71 /* Project object */;
+}
